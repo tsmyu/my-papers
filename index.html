@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <title>My Papers</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+  <header>
+    <h1>My Papers (Sample)</h1>
+    <div class="input-area">
+      <label for="doiInput">DOIまたはCrossref対応のURL: </label>
+      <input type="text" id="doiInput" placeholder="例: 10.1145/nnnnnn.nnnnnn" />
+      <button id="fetchBtn">メタデータ取得</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- 取得した論文を表示（タイトル・著者・出版年など） -->
+    <section>
+      <h2>メイン論文</h2>
+      <div id="mainPaperArea"></div>
+    </section>
+
+    <section>
+      <h2>引用文献リスト</h2>
+      <p>不要な文献は「削除」ボタンで外す</p>
+      <div id="referenceList"></div>
+      <button id="addToGraphBtn">Add to Graph</button>
+    </section>
+
+    <section>
+      <h2>グラフ表示</h2>
+      <p>年代順に上から下へ並びます。</p>
+      <div id="graphArea"></div>
+      <div id="relationPanel">
+        <p>① 線を引きたい2つの論文ボックスを順にクリック</p>
+        <p>② 関係性の説明を入力し [Connect] ボタンを押す</p>
+        <input type="text" id="relationDesc" placeholder="関係性の説明" />
+        <button id="connectBtn">Connect</button>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- LeaderLine本体 (ローカル or CDN) -->
+  <script src="scripts/leader-line.min.js"></script>
+  <!-- Crossref関数 -->
+  <script src="scripts/crossref.js"></script>
+  <!-- メイン処理 -->
+  <script src="scripts/main.js"></script>
+</body>
+</html>

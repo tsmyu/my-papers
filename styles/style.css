@@ -1,0 +1,69 @@
+/* style.css */
+
+/* 全体 */
+body {
+  font-family: sans-serif;
+  margin: 20px;
+}
+
+header {
+  margin-bottom: 20px;
+}
+
+.input-area {
+  margin-top: 10px;
+}
+
+/* メイン紙、引用文献リスト */
+#mainPaperArea .paper-box {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.ref-item {
+  border: 1px solid #eee;
+  margin: 5px 0;
+  padding: 5px;
+}
+
+/* グラフエリア */
+#graphArea {
+  position: relative;
+  width: 800px;
+  height: 1200px;
+  border: 1px solid #999;
+  margin-top: 10px;
+  overflow: auto;
+}
+
+/* 論文ノード */
+.paper-node {
+  position: absolute;
+  width: 300px;
+  min-height: 60px;
+  border: 1px solid #ccc;
+  background: #fafafa;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.paper-node .paper-title {
+  font-weight: bold;
+}
+
+.paper-node .paper-authors {
+  font-size: 0.9em;
+  color: #555;
+}
+
+.paper-node .paper-year {
+  font-size: 0.8em;
+  color: #777;
+}
+
+#relationPanel {
+  margin-top: 10px;
+}

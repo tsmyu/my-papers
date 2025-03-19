@@ -1,0 +1,12 @@
+{
+  "papers": [
+    {
+      "id": "10.1145/xxxx.yyyy",
+      "title": "Sample Paper Title",
+      "authors": ["Doe J.", "Smith A."],
+      "year": 2021,
+      "doi": "10.1145/xxxx.yyyy"
+    }
+  ],
+  "relations": []
+}
